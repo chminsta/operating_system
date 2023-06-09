@@ -1,0 +1,18 @@
+;Myname ASM86 example for CP/M-86
+
+CSEG
+
+mov	cl, 09h
+lea	dx,	msg
+int	224
+
+
+mov	cl,	00h
+
+int	224
+
+DSEG
+org	100h
+msg	db	'ChangMin Lee!$'
+
+end
